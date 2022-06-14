@@ -16,7 +16,7 @@ static UniversityDatabase *_database;
 - (id)init {
     NSLog (@"init...");
     if ((self = [super init])) {
-        // take file sqlite3 as database
+        // take file sqlite3 as database (currently return null -> bug)
         NSString *sqLiteDb = [[NSBundle mainBundle] pathForResource:@"uniData"
             ofType:@"sqlite3"];
         
